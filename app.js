@@ -39,7 +39,7 @@ const usersSchema = {
 }
 
 
-const User = mongoose.model('User',usersSchema);
+const  User = mongoose.model('User',usersSchema);
 
 // const user1 = new User({
 //     username : "avijit ghosh",
@@ -386,7 +386,11 @@ app.get('/runcode',async(req, res) => {
 
 
 
-
+app.post("/update_score", async(req, res) => {
+    //var roll = req.session.rollno;
+    //name = await User.findOne({rollno:rollno});
+    // Increase the score
+})
 
 app.get('/next',async(req, res) => {
     try{

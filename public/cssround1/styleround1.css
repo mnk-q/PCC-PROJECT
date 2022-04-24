@@ -564,22 +564,6 @@ button:hover{
 
 /*------------------ Next Button -------------------------*/
 
-.next{
-    /* background: #03a9f4; */
-    display: flex;
-    float: left;
-    position: absolute;
-    height: 100px;
-    width: 300px;
-    /* clear: both; */
-    /* margin-top: 215px;
-    margin-right: 75px; */
-    margin-top: 1300px;
-    margin-left: 610px;
-    font-family: 'Hurricane', cursive;
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-size: 0px; */
-}
 
 button{
     /* position: relative; */
@@ -592,8 +576,8 @@ button{
     outline: none;
     background: #111;
     color: #fff;
-    font-size: 25px;
-    font-weight: 800;
+    
+    
     letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
@@ -681,8 +665,8 @@ button{
     outline: none;
     background: #111;
     color: #fff;
-    font-size: 25px;
-    font-weight: 800;
+    
+    
     letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
