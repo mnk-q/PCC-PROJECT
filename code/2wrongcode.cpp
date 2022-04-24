@@ -1,33 +1,41 @@
-#include<iostream>
-#include<vector>
-#include<string>
-#include<stack>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <stack>
 using namespace std;
-int countRev (string s);
+int countRev(string s);
 int main()
 {
-        string s; cin >> s;
-        cout << countRev (s) << '\n';
+    string s;
+    cin >> s;
+    cout << countRev(s) << '\n';
 }
-int countRev (string s)
+int countRev(string s)
 {
     stack<char> st;
-    if(s.size()%2!=0){
+    if (s.size() % 2 != 0)
+    {
         return -1;
     }
-    for(int i=0;i<s.size();i++){
-        if(st.empty()){
+    for (int i = 0; i < s.size(); i++)
+    {
+        if (st.empty())
+        {
             st.push(s[i]);
         }
-        else{
-            if(st.top()=='{'&&s[i]=='}'){
+        else
+        {
+            if (st.top() == '{' && s[i] == '}')
+            {
                 st.pop();
-            }else{
+            }
+            else
+            {
                 st.push(s[i]);
             }
         }
     }
-   // cout<<st.size();
+    // cout<<st.size();
     // int count=0;
     // while(!st.empty()){
     //     char top=st.top();
@@ -40,5 +48,5 @@ int countRev (string s)
     //     }
     //     st.pop();
     // }
-    return st.size()/2;
+    return st.size() / 2;
 }
